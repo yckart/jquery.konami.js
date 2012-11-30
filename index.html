@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <style type='text/css'>
+        html,body{margin:0; padding:0; background:#222; overflow:hidden}
+        div {
+            color: black;
+            text-align: center;
+            font-weight: 700;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            background: white;
+            background: -moz-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+            background: -webkit-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+            background: -o-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+            background: -ms-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+            background: radial-gradient(ellipse at center, white 0%, #f6f6f6 47%, #ededed 100%);
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100, finishopacity=90, style=2);
+        }
+        .dark {
+            color: white;
+            background: black;
+            background: -moz-radial-gradient(center, ellipse cover, #222222 0%, black 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #222222), color-stop(100%, black));
+            background: -webkit-radial-gradient(center, ellipse cover, #222222 0%, black 100%);
+            background: -o-radial-gradient(center, ellipse cover, #222222 0%, black 100%);
+            background: -ms-radial-gradient(center, ellipse cover, #222222 0%, black 100%);
+            background: radial-gradient(ellipse at center, #222222 0%, black 100%);
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100, finishopacity=90, style=2);
+        }
+    </style>
+
+    <title>jQuery Konami # Letterable Konami-Code</title>
+</head>
+
+<body>
+    <div>Konami<br>&#9650; &#9650; &#9660; &#9660; &#9664; &#9654; &#9664; &#9654; b a</div>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="jquery.konami.js"></script>
+    <script>
+        var div = $('div');
+
+        // type `konami`
+        $.konami(function() {
+            div.toggleClass('dark');
+        }, 'konami');
+
+        // or use the default `↑ ↑ ↓ ↓ ← → ← → B A`
+        $.konami(function() {
+            div.toggleClass('dark');
+        });
+
+
+        // some unneeded styles
+        $(window).on('resize', function() {
+            var winW = $(this).width(),
+                winH = $(this).height(),
+                fontSize = Math.max(Math.min(div.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+            div.css({
+                width: winW,
+                height: winH,
+                paddingTop: winH/4,
+                fontSize: fontSize / 1.2 + 'px'
+            });
+        }).resize();
+    </script>
+</body>
+</html>

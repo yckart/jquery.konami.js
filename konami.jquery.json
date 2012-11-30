@@ -1,0 +1,27 @@
+{
+    "name": "Konami",
+    "version": "0.0.1",
+    "title": "jQuery.konami.js",
+    "author": {
+        "name": "Yannick Albert",
+        "url": "https://github.com/yckart"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://yckart.com/mit/"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6"
+    },
+    "description": "Letterable Konami-Code",
+    "keywords": [
+        "konami",
+        "letter",
+        "keycode",
+        "string",
+        "array"
+    ],
+    "homepage": "https://github.com/yckart/jQuery.konami.js"
+}
