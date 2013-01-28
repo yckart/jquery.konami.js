@@ -34,7 +34,7 @@ You can define a custom konami code as an **array** as the second argument:
 
 #Example
 
-Take a look at [http://yckart.github.com/jQuery.konami.js/][1].
+Take a look at [http://yckart.github.com/jquery.konami.js/][1].
 
 #Support
 
