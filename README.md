@@ -17,7 +17,7 @@ It is quite simple!
         // your function
     });
 
-**3rd** Fire your keys and thus your konami!
+**3rd** Fire your konami (default: &#9650; &#9650; &#9660; &#9660; &#9664; &#9654; &#9664; &#9654; **b a**) and thus your konami!
 
 #Custom Konami
 You can define a custom konami code as an **array** as the second argument:
