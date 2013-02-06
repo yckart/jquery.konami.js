@@ -60,15 +60,15 @@
 
 
         // some unneeded styles
-        $(window).on('resize', function() {
+        win.resize(function() {
             var center = Math.max(0, ( ( win.height() - div.outerHeight() ) / 2 ) + win.scrollTop()),
-                fontSize = Math.max(Math.min(div.outerWidth() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+                fontSize = Math.max(Math.min(win.outerWidth() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
                 
             div.css({
                 marginTop: center,
                 fontSize: fontSize / 1.2 + 'px'
             });
-        }).resize();
+        }).resize().resize();
     </script>
 </body>
 </html>
