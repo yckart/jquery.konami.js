@@ -26,7 +26,7 @@ You can define a custom konami code as an **array** as the second argument:
         // your function
     }, [75, 79, 78, 65, 77, 73]);
 
-...and even as a **string**/*word*:
+...and even as a **string**:
 
     $.konami(function() {
         // your function
