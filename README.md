@@ -32,6 +32,12 @@ You can define a custom konami code as an **array** as the second argument:
         // your function
     }, 'konami');
 
+If you want to apply the konami effect only on a specific element, you can do that, of course:
+
+    $('input').konami(function() {
+        // your function
+    }, 'konami');
+
 #Example
 
 Take a look at [http://yckart.github.com/jquery.konami.js/][1].
