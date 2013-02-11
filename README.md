@@ -8,8 +8,8 @@ It is quite simple!
 
 **1st** Include jQuery and the plugin:
 
-    <script src='jQuery.js'></script>
-    <script src='jQuery.konami.js'></script>
+    <script src='jquery.js'></script>
+    <script src='jquery.konami.js'></script>
 
 **2nd** Initialize the plugin with your callback function:
 
